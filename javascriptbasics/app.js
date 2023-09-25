@@ -217,38 +217,205 @@ Parameters and Arguments
 -> arguments -> when invoke/call/run 
 
 
+    function greet(name) {
+        console.log("Hello there "+ name);
+    }
+
+    //hello bob
+    greet("Bob");
+
+    //Hello Anna
+    greet("Anna")
+
+    function msg() {
+        console.log("Hi");
+
+    }
+    msg(); 
 */
 
-function greet(name) {
-    console.log("Hello there "+ name);
+
+
+/* 
+return
+-> Default undefined
+-> Values after return aren't read
+
+
+
+    function calculate(value){
+        const newValue = value * 2.54;
+        console.log("the value in cm is: " + value *2.54 + " cm" )
+        return newValue;
+
+        return value * 2.54;
+
+    }
+
+
+    const width = calculate(10);
+    const height = calculate(20);
+
+    const dimensions = [width,height];
+    console.log(dimensions)
+
+
+*/
+
+
+
+/* 
+Function expressions -> another way to define a function
+See later!!!
+
+
+*/
+
+
+
+
+/* 
+Objects -> Key/value pairs methods
+dot notation
+
+
+
+    const person = {
+        name:"Tiago",
+        lastName:"Brito",
+        age:21,
+        education:false,
+        married:false,
+        siblings: ["Leônidas","Otávio"],
+        greting:function (){
+            console.log("Hello, my name is Tiago");
+        }
+    }
+
+    console.log(person.name);
+    console.log(person.lastName);
+    person.greting();
+
+    const age = person.age;
+    console.log(age)
+
+
+
+
+*/
+
+
+/* 
+Conditional Statements Basics
+Comparison Operators
+-> >, <, >=, <=, ==, ===,!, !=, !===
+=== checks value and type
+== checks only value
+= Assigns a value
+
+
+// if else if else
+
+
+
+
+
+  if(2 > 1) {
+    console.log("Hello");
+
+  }
+
+  if(2 < 1) {
+    console.log("Hello");
+  } else{
+    console.log("heloooo");
+  }
+
+
+
+  const num1 = 4;
+  const num2 = 4;
+  const result = num1 == num2;
+
+  if (num1 > num2) {
+    console.log("First number is bigger than second");
+  } 
+  else if(result){
+    console.log("Both numbers are equal");
+  } else {
+    console.log("second number is bigger than First");
+  }
+
+  const num1 = 4;
+  const num2 = 4;
+  const result = num1 == num2;
+
+  const value = true;
+
+  if(!value) {
+    console.log("Value false");
+  }
+*/
+
+
+/* 
+Logical Operators
+
+|| -> OR
+&& -> AND
+
+  const namep = "Peter";
+  const age = 20;
+
+  if (namep === "peter" || age > 20) {
+    console.log("Adult");
+
+  } else{
+    console.log("Kid")
 }
 
-//hello bob
-greet("Bob");
+*/
 
-//Hello Anna
-greet("Anna")
 
-function msg() {
-    console.log("Hi");
+/* 
+Switch
+case break and default
 
+*/
+
+//Dice values 1 - 6
+
+const dice = 1;
+
+
+switch (dice) {
+  case 1: 
+    console.log("You got 1");
+    break;
+  case 2: 
+    console.log("You got 2");
+    break;
+  case 3: 
+    console.log("You got 3");
+    break;
+  case 4: 
+    console.log("You got 4");
+    break;
+  case 5: 
+    console.log("You got 5");
+    break;
+  case 6: 
+    console.log("You got 6");
+    break;
+    default:
+      console.log("You didin't roll the dice");
 }
-msg(); 
 
 
-/*
-BAD WAY TO DO
+/* 
+Loops
 
-function hello() {
-    console.log("Hello there bob");
-}
-function helloanna() {
-    console.log("Hello there anna");
-}
 
-//greet bob
-hello();
+*/
 
-//greet anna
-helloanna();
- */
+
