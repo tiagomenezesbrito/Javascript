@@ -381,41 +381,83 @@ Logical Operators
 Switch
 case break and default
 
+  //Dice values 1 - 6
+
+  const dice = 1;
+
+
+  switch (dice) {
+    case 1: 
+      console.log("You got 1");
+      break;
+    case 2: 
+      console.log("You got 2");
+      break;
+    case 3: 
+      console.log("You got 3");
+      break;
+    case 4: 
+      console.log("You got 4");
+      break;
+    case 5: 
+      console.log("You got 5");
+      break;
+    case 6: 
+      console.log("You got 6");
+      break;
+      default:
+        console.log("You didin't roll the dice");
+  }
 */
 
-//Dice values 1 - 6
 
-const dice = 1;
-
-
-switch (dice) {
-  case 1: 
-    console.log("You got 1");
-    break;
-  case 2: 
-    console.log("You got 2");
-    break;
-  case 3: 
-    console.log("You got 3");
-    break;
-  case 4: 
-    console.log("You got 4");
-    break;
-  case 5: 
-    console.log("You got 5");
-    break;
-  case 6: 
-    console.log("You got 6");
-    break;
-    default:
-      console.log("You didin't roll the dice");
-}
 
 
 /* 
 Loops
+repeat run a block of code while it's true
+-> While loop
+-> do while
+
+-> You need to set the break mecanism
+Turn off autosve
+
+
+
+
+  let amount = 10;
+
+  while(amount > 0) {
+    console.log("I have " + amount + "Dolars and I'm going to the mall");
+    amount--;
+
+  } 
+  console.log("Test");
+
+  let money = 100;
+
+  while(money < 10000) {
+    console.log("I'm Poor because i only have: " + money + "Dolars");
+    money+=1000;
+  }
+
+  console.log("teste")
+
 
 
 */
 
+
+
+/* 
+for loop
+
+  let i;
+
+  for(i = 0; i < 10; i++){
+    console.log("and the number is:" + i);
+  }
+
+
+*/
 
