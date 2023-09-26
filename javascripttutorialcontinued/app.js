@@ -72,46 +72,48 @@ Now you don't need to keep using concatenation
 Array properties and Methods
 
 //length number of items
-
-
-//concat
-
-
-*/
-
-//length
-let names = ["Tiago", "Lucas" , "Emile","Julia"];
-console.log(names[names.length-1]);
+    let names = ["Tiago", "Lucas" , "Emile","Julia"];
+    console.log(names[names.length-1]);
 
 //concat
-const lastNames = ["pepper","onion","banana"];
-const allNames = names.concat(lastNames);
-console.log(allNames);
+    const lastNames = ["pepper","onion","banana"];
+    const allNames = names.concat(lastNames);
+    console.log(allNames);
 
 //reverse
-console.log(allNames.reverse());
+console.log(allNames.reverse());                   
 
 //unshift
-allNames.unshift("Jonas")
-console.log(allNames);
+    allNames.unshift("Jonas")
+    console.log(allNames);
+
 
 //shift
-allNames.shift();
-allNames.shift();
-allNames.shift();
-allNames.shift();
-console.log(allNames);
+    allNames.shift();
+    allNames.shift();
+    allNames.shift();
+    allNames.shift();
+    console.log(allNames);
 
 //push
-allNames.push("Caine");
-console.log(allNames);
+    allNames.push("Caine");
+    console.log(allNames);
 
-//pop
-allNames.pop();
-console.log(allNames)
+//pop   
+    allNames.pop();
+    console.log(allNames)
 
-//splice -mutates original array
-const specificNames = allNames.splice(0,3);
-console.log(allNames);
-console.log(specificNames);
+//splice -mutates original array     (starting item , Number of items)
+    const allNames = ["Tiago","John","Pedro","Rafael"]
+    const specificNames = allNames.splice(0,1);
+    console.log(allNames);
+    console.log(specificNames);
+*/
+
+
+
+        
+
+
+
 
