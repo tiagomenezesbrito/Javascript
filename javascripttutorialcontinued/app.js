@@ -111,8 +111,134 @@ console.log(allNames.reverse());
 */
 
 
+/* 
+Reference vs value
 
+primitive data types
+typeof
+
+
+// When assigning primitive data type value to a variable any changes are made directly to that value, without affecting original value.
+
+//When assigning non-primitive data type value to a variable is done by reference so any changes will affect all the references
+
+    const number = 1;
+    let number2 = number;
+    number2 = 3
+    console.log(number);
+    console.log(number2);
+
+    let person = {name: "Tiago"};
+    let person2 = person;
+    person2.name = "Susy";
+    console.log(person2.name)
+    console.log(person.name)
+
+
+*/
+
+
+/*
+
+// Null and undefined
+//both represent no value
+-> undefined -> javascript can't find value for this
+variable without value
+missing function arguments 
+missing object properties
+
+
+-> null -> Developer sets the value
+
+
+*/
+
+
+
+/* 
+truthy and falsy
+// "",'',``,0,-0,NaN,false,null,undefined  -> falsy
+the rest is truthy
+
+
+    const number = 0;
+
+    if(number){
+        console.log("Hello");
         
+    }else {
+        console.log("falsy");
+    }
+
+
+*/
+
+
+/* 
+Operators
+
+//unary operator ->ex: typeof
+
+
+//binary operator ->ex: assignment
+let number = 3;
+let number2 = 2 + 5;
+
+
+
+//ternary operator 
+//condition ? (runs if it's true) : (runs if false)
+
+    using ternary:
+    const value = 1 > 0;
+    value ? console.log("Value it's true") : console.log("value it's false");
+
+
+    not using ternary:
+    const value2 = 2 > 1;
+    if(value2) {
+        console.log("True");
+    } else {
+        console.log("false");
+    }
+*/
+
+
+
+/* 
+//Global scope vs Local scope
+
+
+//GLOBAL SCOPE
+-> any variable outside code block {} is Global scope
+-> global scope can be access anywhere in the program
+-> gotchas: name colisions, modify by mistake.
+
+
+    const globalVar = "This is global";
+
+    function testingglobal() {
+        //some code
+        console.log(globalVar);
+    }
+    testingglobal();
+
+    
+// LOCAL SCOPE
+-> Can not be access from outside code blocks
+//if not var
+
+    function testinglocal(){
+        //some code
+        const localVar = "this is local";
+        console.log(localVar);
+    }
+
+    testinglocal();
+    console.log(localVar);
+
+
+*/
 
 
 
