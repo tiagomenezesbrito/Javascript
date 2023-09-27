@@ -384,4 +384,65 @@ variable lookup
 //filter
 //Return new array
 //Can manipulate the size of new array
-//
+//returns based on condition
+
+/* 
+        const animals = [
+        {animalName:"Lion",animalType:"Predator"},
+        {animalName:"crocodile",animalType:"Predator"},
+        {animalName:"Zebra",animalType:"Prey"},
+        {animalName:"sheep",animalType:"Prey"},
+        {animalName:"rabbit",animalType:"Prey"},
+        
+        
+    ];
+
+    const prey = animals.filter(function(animal){
+        
+        return animal.animalType === "Prey";
+        
+        
+    });
+
+    console.log(prey);
+ */
+
+
+
+
+
+//Find
+//Returns Single  instance 
+//Returns only first match, if no match undefined
+//Great for getting unique value    
+/* 
+    const people = [
+        {name:"John",age:20,position:"Developer",id:1},
+        {name:"susan",age:22,position:"Front-End",id:2},
+        {name:"Lex",age:28,position:"Back-End",id:3},
+    ]
+
+    const names = ["Bob","John","lucas","John"];
+
+    const person = people.find(function(person){
+        return person.id ===3;
+    })
+
+    const name = names.find(function(person){
+        return person === "John";
+    })
+
+    console.log(name);
+    console.log(person) 
+*/
+
+
+//reduce
+// iterates, callback function
+//reduces to a single value - number, array, object
+// 1 parameter ("acc") - total of all calculations
+// 2 parameter ("curr") - current iteration/value
+
+
+
+
