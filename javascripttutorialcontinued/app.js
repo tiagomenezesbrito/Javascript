@@ -223,7 +223,7 @@ let number2 = 2 + 5;
     }
     testingglobal();
 
-    
+
 // LOCAL SCOPE
 -> Can not be access from outside code blocks
 //if not var
@@ -242,4 +242,146 @@ let number2 = 2 + 5;
 
 
 
+/* 
+variable lookup
+// {} -> first local scope -> global
 
+    const globalNumber = 5;
+
+    function add(num1,num2){
+        const globalNumber = 10;
+        return num1 + num2 + globalNumber;   
+    }
+
+    console.log(add(3,5));
+*/
+
+
+
+
+/* 
+// Callback functions, higher order Functions, Functions as first class Objects Citizens
+
+// Functions are first class objects -> stored in a variable (expression), passed as an argument to another function, return from the function (closure)
+
+// Higher order function -> accepts another function as an argument or returns another another function as a result
+
+// Callback function -> passed to a another function as an argument and executed inside that function
+
+
+
+    function morning (name) {
+
+        // console.log(`Good Morning ${name}`)
+        return `Good morning ${name}`;
+    }
+
+
+    function greet (name, callBack) {
+        
+        const myName = "Tiago";
+        console.log(`${callBack(name)}, my name is ${myName}`);
+
+    }
+
+
+    greet("Lucas",morning);
+    greet("Zohan",morning);
+
+*/
+
+
+
+/* 
+// Powerfull Array methods
+// forEach, map, filter, find, reduce
+// iterate over array - NO FOR LOOP REQUIRED
+
+// Accept CALLBACK function as argument, calls callback against each item in a array. Reference item in the callback paramater
+
+*/
+
+//forEach
+//Does not return new array
+// Só precisamos passar a função e o forEach vai invocar a mesma para cada elemento do array.
+/*  
+    const people = [
+    {name:"Bob",age:20,position:"Developer"},
+    {name:"Peter",age:22,position:"Designer"},
+    {name:"Susy",age:25,position:"front-end"},
+
+    ];
+
+    function showPerson(person){
+        console.log(person.position.toUpperCase()); 
+    }
+
+    people.forEach(showPerson);
+
+    people.forEach(function(item){
+        console.log(item.age)
+    })
+
+
+
+    const arraytest = [
+        {name:"car", price:20000},
+        {name:"boat", price:60000},
+        {name:"small-plane", price:1000000},
+        {name:"Big-plane", price:10000000},
+
+    ];
+
+    function namePrice(object) {
+        console.log(`Hello, this is a: ${object.name} and the price is: ${object.price} `);
+    }
+
+    arraytest.forEach(namePrice);
+*/
+
+
+
+
+//map IMPORTANT TO LEARN!!!
+//Return a new array
+// Does not change the size from the original array
+// Uses value from the new array when making one
+/*  
+
+    const people = [
+    { name: "Bob", age: 20, position: "Developer" },
+    { name: "Peter", age: 22, position: "Designer" },
+    { name: "Susy", age: 25, position: "front-end" },
+    ];
+
+    const ages = people.map(function(person){
+        console.log(person);
+        return person.age +20;
+
+    });
+
+    const newPeople = people.map(function(person){
+        return {
+            firstName:person.name.toUpperCase(),
+            oldAge: person.age +30,
+        
+        }
+    })
+
+    //console.log(people);
+    console.log(newPeople);
+    //console.log(ages);
+
+    const names = newPeople.map(function(person){
+        return  `<h1>${person.firstName}</h1>`   
+    })
+    console.log(names)
+
+    //document.body.innerHTML = names.join('') LATER!!!
+*/
+
+
+//filter
+//Return new array
+//Can manipulate the size of new array
+//

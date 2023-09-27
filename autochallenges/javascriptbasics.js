@@ -113,18 +113,16 @@ Just making stuff
 */
 
 
-const number1 = 21;
+/* const number1 = 21;
 const number2 = "2";
 const number3 = [2,5,6];
 
 console.log(typeof(number1));
 console.log(typeof(number2));
 console.log(typeof(number3));
-
+ */
 /* 
 Function that tells the value of a data type
-
-*/
 
 function whatData(data) {
     const whatData = typeof(data);
@@ -140,6 +138,152 @@ whatData(bigBox);
 
 
 
+*/
 
+
+
+
+
+
+
+
+
+/* 
+Objects
+-> Properties
+-> Methods
+
+// Making a object
+
+    const Tiago = {
+        name:"Tiago Melo Menezes De Brito",
+        height:1.93,
+        color: "white",
+        age:21,
+        //greting: function() {code here} or:
+        greting(){
+            console.log(`Hi, my name is ${Tiago.name}`);
+        }
+    }
+
+//Method
+    Tiago.greting();
+//Propertie
+    console.log(Tiago.name);
+*/
+
+
+
+/* 
+Logical operators
+Conditional statements
+if (condition) {
+    code
+} 
+else if {
+    code
+} else {
+    another code
+}
+
+switch (condition) {
+    case: 1{
+
+        break;
+    }
+    default {
+
+    }
+}
+
+
+*/
+
+/* const people = 6;
+
+if (people > 5 ) {
+    console.log("Wow, it's to many people for my house");
+} else {
+    console.log("Welcome to my house!!!");
+}
+ */
+/* 
+mix: contional statements with arrays and functions
+function that dosen't let stranger enter the party.
+
+pick array
+verify the members
+if a member is not allowed, tell the name and to get out
+
+const peopleNames = ["Tiago","Lucas","Paulo","Guila","Claudino","James"];
+const allowedList = ["TIAGO", "LUCAS", "PAULO", "GUILA", "CLAUDINO"];
+
+function canEnter(arr){
+
+    for(let i=0;i<arr.length;i++) {
+        
+        
+        if(allowedList.includes(arr[i].toUpperCase())){
+            console.log(`Hello, ${arr[i]}can enter.`);
+        } else {
+            console.log(`Hello sir ${arr[i]}`);
+        }
+    }
+}
+
+canEnter(peopleNames);
+
+
+ */
+
+/* 
+Try to build a function that tell if you are natty
+->Function
+->Variable
+->Conditional Statements
+
+
+    function nattyOrNot(testo) {
+        
+        if (testo < 300) {
+            console.log("CUIDADO RAPAZ, SUA TESTO ESTÁ BAIXA");
+        }
+        else if (testo < 1000 && testo > 299){
+            console.log("MUITO BEM RAPAZ, NATURAL É A FONTE DA JUVENTUDE E A COISA CERTA A FAZER");
+        } else{
+            console.log("QUEM VOCÊ PENSA QUE É RAPAZ ?");
+            console.log("O CHRIS BUMSTEAD? O CIBAM?");
+            console.log("PARECE QUE ALGUÉM ESTÁ FAZENDO AMOR COM O SUCO");
+        }
+    }
+
+    nattyOrNot(1000);
+*/
+
+
+/* 
+try to mix function, variables, loops
+
+receive a value and tell the datatype
+
+
+const data = 2;
+function whatData(data) {
+
+    console.log(`Your data type is: ${typeof(data)}`);
+
+}
+const myarray = ["Tiago"];
+whatData();
+*/
+
+
+/* 
+Function that takes your salary, and splites in 3 categories:
+-> saves 15%
+-> fun 25%
+-> others 60%
+
+*/
 
 
