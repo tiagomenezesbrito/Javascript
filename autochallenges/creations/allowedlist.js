@@ -5,6 +5,8 @@ if it's not: can't enter;
 
 */
 
+
+/*  OLD way
 const anotherpeople = ["Rafael","Jonas","Nathan","Lucas"];
 
 const peopleNames = ["Tiago", "Lucas", "Paulo", "Guila", "Claudino", "James"];
@@ -28,3 +30,38 @@ function canEnter(arr) {
 //calling the function
 canEnter(peopleNames); 
 canEnter(anotherpeople);
+
+ */
+
+
+
+
+//New way using Filter method
+
+//People List
+const peopleList = ["Tiago","Lucas","John","Paulo","Akim","Claudino","Guilherme","Rafael","zohan"]
+//Allowed List
+const allowedList = ["TIAGO","LUCAS","PAULO","AKIM","CLAUDINO","GUILHERME"]
+
+//function to filter
+function canEnter(people){
+  if(allowedList.includes(people.toUpperCase())){
+    return people;
+  } else{
+    console.log(`Sorry ${people}, you aren't invited`);
+  }
+}
+
+//Using filter method 
+const enter = peopleList.filter(canEnter);
+console.log(enter);
+
+
+
+
+
+
+
+
+
+
