@@ -101,3 +101,61 @@ asssign to "specifiecId variable and log"
 
     console.log(friedChicken); 
 */
+
+
+/* Reduce challenge
+sum upp all student.score values with reduce
+divide by the length of the students array
+assign to "averageScore and log" 
+
+
+
+*/
+
+/* The way i Did
+
+const sumScores = students.reduce(function(acc,currentItem){
+
+    acc += currentItem.score;
+    console.log(acc);   
+    return acc;
+},0);
+// O zero é o valor inicial do Accumulator
+const averageScore = sumScores/students.length;
+console.log(`The average Score of the students is: ${averageScore}`);
+ */
+
+
+
+//The way He did it
+/* const averageScore = students.reduce(function(totalScore,student){
+
+    totalScore += student.score;
+    return totalScore;
+},0)/students.length;
+console.log(averageScore); */
+
+
+
+
+/* reduce challenge //Square bracket notation ?????
+
+list and sum favorite subjects with reduce
+    
+assign to survey and log
+
+*/
+
+
+const survey = students.reduce(function(Survey,student){
+    console.log(student.favoriteSubject);
+    const favSubject = student.favoriteSubject;
+    if (Survey[favSubject]){
+        Survey[favSubject] = Survey[favSubject] + 1;
+    } else{
+        Survey[favSubject] = 1;
+    }
+    
+    console.log(Survey);
+    return Survey;
+},{});

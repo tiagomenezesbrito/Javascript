@@ -443,6 +443,25 @@ variable lookup
 // 1 parameter ("acc") - total of all calculations
 // 2 parameter ("curr") - current iteration/value
 
+/* 
+    const people = [
+        {name:"James", age:30,position:"Senior-Developer",id:1, salary:3000},
+        {name:"Tiago", age:21,position:"Junior-Developer",id:2, salary:1000},
+        {name:"Claudino", age:25,position:"Back-end",id:3, salary: 2000 },
+        {name:"Long", age:23,position:"Front-End",id:4, salary:1500},
 
+    ];
+
+    const total = people.reduce(function(acc,currItem){
+        
+        console.log(`total ${acc}`);
+        console.log(`Current money: ${currItem.salary}`);
+        acc += currItem.salary;
+        
+        return acc //You must return acc
+    },0);
+
+    console.log(total);
+*/
 
 
