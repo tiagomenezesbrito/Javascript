@@ -37,13 +37,16 @@ window object = browser api
 
 /* 
 getElementById("element")
-getElementsByTagName(tagname);
+getElementsByTagName("tagname"); -> HTMLcollection
+getElementByClassName("ClassName") -> HTMLcollection
 //HTMLcollection = array-like object
 //index, lenght property but not array methods (forEach)
 
-//querySelectorAll() in most cases
+
+//querySelector("any css") -> selects single
+//querySelectorAll("any css")-> select all // in most cases
 //nodelist - objects are collections of nodes
-//can run for each
+//can run for forEach
 //turn them into array - spread operator [...]
 //after that can use any array property
 
@@ -51,18 +54,62 @@ select the element or group of elements that we want
 Decide the effect we want to apply to the selection
 */
 
-const h1 = document.getElementById("title");
-h1.style.backgroundColor = "grey";
-h1.style.color = "blue";
+/* 
 
-const btn = document.getElementById("btn");
- btn.style.backgroundColor = "grey"; 
-
-/* document.getElementById("btn").style.backgroundColor = "green";
-document.getElementById("btn").style.color = "black" */
-
-const mainp = document.getElementById("mainp");
-mainp.style.backgroundColor = "yellow";
+    const h1 = document.getElementById("title");
+    h1.style.backgroundColor = "green";
+    h1.style.color = "yellow";
 
 
-const list = document.getElementsByTagName(li)
+    const btn = document.getElementById("btn");
+    btn.style.backgroundColor = "grey"; 
+
+    //document.getElementById("btn").style.backgroundColor = "green";
+    //document.getElementById("btn").style.color = "black" 
+
+    const mainp = document.getElementById("mainp");
+    mainp.style.backgroundColor = "yellow";
+
+
+    const list = document.getElementsByTagName("li");
+    console.log(list);
+    list[0].style.backgroundColor = "red";
+    list[1].style.backgroundColor = "blue";
+    list[2].style.backgroundColor = "blue";
+    list[3].style.backgroundColor = "red";
+    console.log(list.length);
+
+    const betterList = [...list];
+    betterList.forEach(function(item){
+        item.style.background = "green";
+    })
+
+    console.log(betterList);
+
+
+    const orange = document.getElementsByClassName("special");
+
+    orange[0].style.backgroundColor = "orange"; 
+
+*/
+
+
+/* 
+const result = document.querySelector("#result");
+result.style.backgroundColor = "gray";
+
+const item = document.querySelector(".special");
+item.style.backgroundColor = "orange";
+
+const betterItem = document.querySelectorAll(".special");
+console.log(betterItem);
+//betterItem.style.backgroundColor = "green";
+
+const h1 = document.querySelector("h1");
+console.log(h1);
+h1.style.color = "red";
+
+const title = document.querySelector("#title");
+console.log(title);
+title.style.backgroundColor = "green";
+ */
