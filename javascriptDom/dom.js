@@ -113,3 +113,55 @@ const title = document.querySelector("#title");
 console.log(title);
 title.style.backgroundColor = "green";
  */
+
+
+
+
+
+
+
+/* 
+Navigate the Dom
+
+//children
+    const result = document.querySelector("#result");
+
+    const children = result.children;
+    console.log(children);
+    children[1].style.backgroundColor = "red";
+    children[3].style.backgroundColor = "red";
+
+
+//parentElement
+    
+    const heading = document.querySelector("h2");
+    console.log(heading.parentElement.parentElement)
+    console.log(heading.parentElement)
+
+    const parent = heading.parentElement;
+    parent.style.color = "blue";
+    parent.style.backgroundColor = "green";
+
+
+*/
+
+
+
+
+
+
+// previousSibling
+// nextSibling
+// return whitespace
+/* 
+
+ */
+
+
+const first = document.querySelector(".first");
+console.log(first);
+const second = first.nextSibling.nextSibling.style.color = "red";
+console.log(second);
+
+const last = document.querySelector(".last");
+const beforeLast = last.previousSibling.previousSibling.style.color = "blue";
