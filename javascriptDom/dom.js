@@ -158,10 +158,42 @@ Navigate the Dom
  */
 
 
-const first = document.querySelector(".first");
+/* const first = document.querySelector(".first");
 console.log(first);
 const second = first.nextSibling.nextSibling.style.color = "red";
 console.log(second);
 
 const last = document.querySelector(".last");
-const beforeLast = last.previousSibling.previousSibling.style.color = "blue";
+const beforeLast = last.previousSibling.previousSibling.style.color = "blue"; */
+
+
+
+
+
+//nodeValue
+//textContent
+
+/* const item = document.getElementById("special");
+const value = item.firstChild.nodeValue;
+const easyValue = item.textContent;
+
+console.log(easyValue); */
+
+// getAttribute();
+// setAttribute();
+
+/* const first = document.querySelector('.first');
+const idValue = first.getAttribute('id');
+// console.log(idValue);
+
+const link = document.getElementById('link');
+const showLink = link.getAttribute('href');
+console.log(showLink);
+
+const last = link.nextElementSibling;
+last.setAttribute('class', 'first');
+last.textContent = 'i also have a class of first';
+console.log(last);
+
+const links = document.querySelectorAll('.first');
+console.log(links); */
