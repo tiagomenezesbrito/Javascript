@@ -234,4 +234,42 @@ console.log(result.children);
 const heading = document.createElement('h2');
 heading.innerText = `i am a dynamic heading`;
 document.body.prepend(heading);
+*/
+
+
+
+// innerHTML
+// textContent
+
+/* const list = document.getElementById('first');
+const div = document.getElementById('second');
+const item = document.querySelector('.item');
+
+console.log(div.textContent);
+console.log(list.innerHTML);
+console.log(list.textContent);
+
+const randomVar = 'random value';
+
+const ul = document.createElement('ul');
+ul.innerHTML = `<li class="item">${randomVar}</li>
+      <li>list item</li> <li>list item</li>`;
+document.body.appendChild(ul);
+
+div.textContent = `<li class="item">${randomVar}</li>
+      <li>list item</li> <li>list item</li>`;
+ */
+
+
+
+// select element
+// addEventListener()
+// what event, what to do
+
+/* const btn = document.querySelector('.btn');
+const heading = document.querySelector('h2');
+
+btn.addEventListener('click', function() {
+  heading.classList.add('red');
+});
  */
