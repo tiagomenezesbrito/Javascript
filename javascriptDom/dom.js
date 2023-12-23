@@ -413,3 +413,42 @@ list.addEventListener('click', showBubbling, { capture: true });
 container.addEventListener('click', showBubbling, { capture: true });
 document.addEventListener('click', showBubbling, { capture: true });
 window.addEventListener('click', showBubbling, { capture: true }); */
+
+
+
+// submit event listener
+// prevent default
+// how to get a value
+
+/* const form = document.getElementById('form');
+const name = document.getElementById('name');
+const password = document.getElementById('password');
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  console.log('form submitted');
+  console.log(name.value);
+  console.log(password.value);
+});
+ */
+
+
+// Web Storage API - provided by browser
+// session storage, local storage
+// setItem, getItem , removeItem, clear
+
+// localStorage.setItem('name','john')
+// sessionStorage.setItem('name','john')
+
+/* localStorage.setItem('name', 'john');
+localStorage.setItem('friend', 'peter');
+localStorage.setItem('job', 'developer');
+localStorage.setItem('address', 'street 123');
+
+const name = localStorage.getItem('name');
+console.log(name);
+
+localStorage.removeItem('name');
+const anotherName = localStorage.getItem('name');
+console.log(anotherName);
+localStorage.clear();
+ */
