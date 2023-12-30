@@ -39,7 +39,7 @@ console.log(person);
 // set variable as property value
 // dot notation vs bracket notation
 
-const age = 40;
+/* const age = 40;
 let random = 'random-value';
 random = 'age';
 const person = {
@@ -70,3 +70,29 @@ console.log(person['name']);
 console.log(person['random-value']);
 
 console.log(person[random]);
+ */
+
+
+
+// this
+// points to the left of the dot
+
+const john = {
+  firstName: 'john',
+  lastName: 'anderson',
+  fullName: function () {
+    console.log(this);
+    console.log(`My full name is ${this.firstName} ${this.lastName}`);
+  },
+};
+const bob = {
+  firstName: 'peter',
+  lastName: 'sanders',
+  fullName: function () {
+    console.log(this);
+    console.log(`My full name is ${this.firstName} ${this.lastName}`);
+  },
+};
+
+john.fullName();
+bob.fullName();
